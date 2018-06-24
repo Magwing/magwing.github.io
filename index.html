@@ -1,3 +1,13 @@
 <!DOCTYPE html>
 <html>
   <title>hhh</title>
+  <canvas id="os" disable-scroll="true">
+    <script> var canvas = $('#myCanvas');   
+   canvas.attr("width",$(window).get(0).innerWidth)  
+   canvas.attr("height",$(window).get(0).innerHeight)  
+   var context = canvas.get(0).getContext("2d");  
+   context.fillRect(0,0,canvas.width(),canvas.height());  
+   $(window).resize(function(){  
+      canvas.attr("width",$(window).get(0).innerWidth)  
+      canvas.attr("height",$(window).get(0).innerHeight)  
+     context.fillRect(0,0,canvas.width(),canvas.height());  </script>
